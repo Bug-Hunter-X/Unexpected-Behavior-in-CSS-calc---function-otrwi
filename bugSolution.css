@@ -1,0 +1,10 @@
+/* Correct usage of calc() */
+#myElement {
+  width: calc(100% - 10px);
+  height: calc(200px + 2em); /* Compatible units */
+}
+/*Incorrect Usage */
+#incorrectElement{
+  width:calc(100%-10px); /* Incorrect spacing*/
+  height: calc(100% + 2em);/*Potentially problematic unit combination */
+}
